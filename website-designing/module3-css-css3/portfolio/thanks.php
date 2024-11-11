@@ -7,10 +7,13 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 //Load Composer's autoloader
-require 'vendor/autoload.php';
+// require 'vendor/autoload.php';
 //Create an instance; passing `true` enables exceptions
 if(isset($_POST["sub"]))
 {
+require('PHPMailer/Exception.php');
+require('PHPMailer/PHPMailer.php');
+require('PHPMailer/SMTP.php');    
 $mail = new PHPMailer(true);
 try {
     //Server settings
@@ -34,12 +37,11 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Contact us Enquiry details';
-    $mail->Body    = "<h4>The details of customers is :".$fname."<br>".$email."<br>".$subject."<br>".$message."<br>".$phone."<h4>";
+    $mail->Body    = "<img src='https://media.lordicon.com/icons/wired/lineal/177-envelope-send.gif' />"."<br>"."<h4>The details of customers is :"."<br>"."Customers name is :".$fname."<br>"."Customers email is :".$email."<br>"."Subject for contacts is :".$subject."<br>"."Message of customers is :".$message."<br>"."Customers Phone is :".$phone."<br>"."<h4>"."<br>"."This is a contact us email formate comes from website";
     $mail->send();
     echo "<script>
-    alert('Your details is send successfully i emails please checked admin email')
     window.location='thanks.php';
-    </script";
+    </script>";
 } 
 
 catch (Exception $e) {
