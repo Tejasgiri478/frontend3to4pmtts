@@ -89,6 +89,7 @@ body {
   padding: 0px;
   background-color: white;
   animation: 2s fadeInLeft alternate;
+  position: relative !important;
 }
 .portfolio {
   width: 80%;
