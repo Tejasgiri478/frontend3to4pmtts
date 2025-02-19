@@ -13,8 +13,7 @@ export default function NameApp() {
         //alert(e.target[0].value);
         
         // alert(e.target[0].value)
-        // e.target.reset();
-
+        // e.target.reset()
         setText(e.target.value);
     
     }
