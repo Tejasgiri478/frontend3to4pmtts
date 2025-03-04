@@ -27,3 +27,8 @@ height: auto;
 margin: auto;
     
 }
+.icecream-rounded
+{
+top: 0 !important;    
+margin-top: -100% !important;    
+}
