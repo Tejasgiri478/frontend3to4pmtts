@@ -30,7 +30,7 @@ const HeroSection = () => (
 
       {/* Center Section - Big Ice Cream Image */}
       <div className="md:w-1/3 flex justify-center">
-        <img src={banner2} alt="Big Cone Ice Cream" className="w-80" />
+        <img src={banner2} alt="Big Cone Ice Cream" className="w-60 h-110" />
       </div>
 
       {/* Right Section - Cafe and Food Truck Numbers */}
