@@ -1,0 +1,29 @@
+{
+  "contact-us": [
+    {
+      "id": "cdea",
+      "name": "brijesh",
+      "email": "b@gmail.com",
+      "phone": "94451212121",
+      "subject": "hi",
+      "comment": "hi"
+    }
+  ],
+  "addcategory": [
+    {
+      "id": "797f",
+      "catname": "Electronics",
+      "catdesc": "hi"
+    },
+    {
+      "id": "d3f7",
+      "catname": "womens items",
+      "catdesc": "good"
+    },
+    {
+      "id": "cae7",
+      "catname": "mens items",
+      "catdesc": "hi"
+    }
+  ]
+}
