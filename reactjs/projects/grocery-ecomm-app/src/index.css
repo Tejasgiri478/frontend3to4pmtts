@@ -1,0 +1,91 @@
+@import "tailwindcss";
+/* customer panel stylesheet */
+.products
+{
+width: 95% !important;
+height: auto !important;
+margin: auto;
+margin-top: 2%;
+display: flex !important;
+flex-direction: row;
+
+}
+.category-sidebar
+{
+width: 50%;
+height: auto;
+background-color: lightgray;
+}
+.category-sidebar ul li 
+{
+padding: 15px 25px;
+font-size: 18px;
+list-style-type: none;
+text-decoration: none;    
+}
+.category-sidebar a 
+{
+color: black;    
+}
+.prod-app
+{
+width: 50%;
+height: auto;
+margin: 0 !important;
+padding: 15px !important;
+}  
+.prod-app img 
+{
+width: 100% !important;
+height: auto;  
+}
+
+
+/* admin stylesheet */
+.sidebar-links
+{
+width: 100%;
+height: auto;  
+}
+.sidebar-links li 
+{
+display: block;
+text-decoration: none;
+list-style-type: none;  
+padding: 10px 1px;
+}
+.sidebar-links a 
+{
+color: white;
+font-size: 18px;
+}
+@media only screen and (max-width:580px)
+{
+.products
+{
+width: 100% !important;
+height: auto !important;
+display: grid !important;
+grid-template-columns: auto auto !important;
+
+}
+.prod-app
+{
+width: 100%;
+height: auto;
+margin: 0 !important;
+padding: 15px !important;
+}  
+.prod-app img 
+{
+width: 100% !important;
+height: auto;  
+}
+.prod-app p
+{
+width: 100%;
+height: auto;
+margin: auto;
+font-size: 15px !important;
+}  
+}
