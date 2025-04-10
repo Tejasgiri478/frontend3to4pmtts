@@ -1,0 +1,40 @@
+{
+  "category": [
+    {
+      "id": "4fa1",
+      "catname": "Vegetables",
+      "catdesc": "good for health"
+    },
+    {
+      "id": "e903",
+      "catname": "Fruits",
+      "catdesc": "Good for health"
+    },
+    {
+      "id": "a3ec",
+      "catname": "Dry Fruits",
+      "catdesc": "Good for health"
+    },
+    {
+      "id": "386e",
+      "catname": "abcd",
+      "catdesc": "hi"
+    },
+    {
+      "id": "7fc1",
+      "catname": "good",
+      "catdesc": "good"
+    },
+    {
+      "id": "9678",
+      "catname": "hi",
+      "catdesc": "hi"
+    }
+  ],
+  "add-items": [],
+  "carts": [],
+  "orders": [],
+  "customers": [],
+  "reviews": [],
+  "contacts": []
+}
