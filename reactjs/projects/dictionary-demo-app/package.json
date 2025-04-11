@@ -1,5 +1,5 @@
 {
-  "name": "grocery-ecomm-app",
+  "name": "dictionary-demo-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,21 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "json-server": "json-server --watch db.json --port 8000"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.0.17",
     "axios": "^1.8.4",
+    "bootstrap": "^5.3.5",
     "bootstrap-icons": "^1.11.3",
-    "file-saver": "^2.0.5",
-    "json-server": "^1.0.0-beta.3",
     "react": "^19.0.0",
+    "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.4.1",
-    "sweetalert2": "^11.17.2",
-    "tailwindcss": "^4.0.17",
-    "xlsx": "^0.18.5"
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

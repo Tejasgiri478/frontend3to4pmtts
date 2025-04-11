@@ -7,13 +7,13 @@ import { useNavigate } from 'react-router-dom';
 export default function AddCategory() {
 //destrcturing of data  
 const[cat,setCat]=useState("");
+
 // display category
 useEffect(()=>{
     axios.get(`http://localhost:8000/category`).then((response)=>{
       setCat(response.data)
     });
 })
-
 // add Category
 const catname=useRef("");
 const catdesc=useRef("");
@@ -50,15 +50,15 @@ return (
 <hr className='border-1 w-55 ms-5' />
 <form className='w-3/4 mt-5' onSubmit={addCategoryData}>
 <div className='form-group mt-3'>
-<input type='text' ref={catname} placeholder='Category Name *' required className='w-3/4 p-2 border-1' />
+<input type='text' ref={catname} placeholder='Category Name *' required className='w-5/6 p-2 border-1' />
 </div>
 
 <div className='form-group mt-3'>
-<textarea type='text' ref={catdesc} placeholder='Category Descriptions *' required className='w-3/4 p-2 border-1'></textarea>
+<textarea type='text' ref={catdesc} placeholder='Category Descriptions *' required className='w-5/6 p-2 border-1'></textarea>
 </div>
 
 <div className='form-group mt-3'>
-<input type='submit' value="AddCategory" className='w-3/4 p-3 border-1 bg-black text-white' />
+<input type='submit' value="AddCategory" className='w-5/6 p-3 border-1 bg-black text-white' />
 </div>
 </form>
 
@@ -71,7 +71,9 @@ return (
           <tr>
            <td  className='m-5 p-5'>{items.catname}</td>
            <td>{items.catdesc}</td>
-           <td><button type='button' className='p-2 bg-red-500 text-white'><i className='bi bi-trash'></i> Delete</button> | <button type='button' className='p-2 bg-blue-800 text-white'><i className='bi bi-pencil'></i> Edit</button></td>
+           <td><button onClick={()=>navigate(`/admin-login/delete-category/${items.id}`)} type='button' className='p-2 bg-red-500 text-white'><i className='bi bi-trash'></i> Delete</button> 
+           |
+          <button type='button'  onClick={()=>navigate(`/admin-login/edit-category/${items.id}`)} className='p-2 bg-blue-800 text-white'><i className='bi bi-pencil'></i> Edit</button></td>
            </tr>
             </>
         )

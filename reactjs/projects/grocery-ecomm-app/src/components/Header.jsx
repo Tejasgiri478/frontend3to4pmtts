@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export default function Header() {
   return (
    <>
@@ -11,7 +11,8 @@ export default function Header() {
         </div>   
 
         <div className='1/3'>
-            <span className='bi bi-cart text-3xl ms-16'>10</span>
+            <Link to="/register"><span className='bi bi-person text-4xl ms-4'></span></Link>
+            <span className='bi bi-cart text-3xl ms-10'>10</span>
         </div> 
         
     </div>

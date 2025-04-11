@@ -9,7 +9,7 @@ export default function Navigations() {
         <li><Link to='/'><span className='text-xl bi bi-flower2'></span>Vegetable</Link></li>
         <li><Link to='/'>Fruits</Link></li>
         <li><Link to='/'>Dry Fruits</Link></li>
-        <li><Link to='/'><span className='text-xl bi bi-telephone'></span>Contact</Link></li>
+        <li><Link to='/contact-us'><span className='text-xl bi bi-telephone'></span>Contact</Link></li>
       </ul>     
       </nav>
    </>
