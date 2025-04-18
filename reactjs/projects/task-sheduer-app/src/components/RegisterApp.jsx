@@ -1,22 +1,43 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Container } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
+import { useUserAuth } from '../Context/UserAuthContext';
+
 export default function RegisterApp() {
+const [email, setEmail] = useState("");
+const [error, setError] = useState("");
+const [password, setPassword] = useState("");
+const { signUp } = useUserAuth();
+let navigate = useNavigate();
+const handleSubmit = async (e) => {
+e.preventDefault();
+setError("");
+try {
+await signUp(email, password);
+navigate("/");
+} catch (err) {
+setError(err.message);
+}
+};
+
   return (
     <>
         <Container className='p-5 mt-5  mx-auto bg-white login-app'>
             <h1 className='text-center mt-5'>Task manager App</h1>
+            
+           {error && <Alert variant="danger">{error}</Alert>}
+
 
             <h4 className='text-center mt-5'>Create account here!</h4>
-            <form className='mt-5'>
+            <form className='mt-5' onSubmit={handleSubmit}>
                 <div className='input-group mt-3'>
                     <span className='input-group-text bg-success text-white'><i className='bi bi-inbox'></i></span>
-                    <input type='text' placeholder='Email *' required className='form-control' />
+                    <input type='text' placeholder='Email *' onChange={(e) => setEmail(e.target.value)}  required className='form-control' />
                 </div>
                 
                 <div className='input-group mt-3'>
                     <span className='input-group-text bg-success text-white'><i className='bi bi-lock'></i></span>
-                    <input type='password' placeholder='Password *' required className='form-control' />
+                    <input type='password' placeholder='Password *' onChange={(e) => setPassword(e.target.value)} required className='form-control' />
                 </div>
 
                 <div className='input-group mt-3'>

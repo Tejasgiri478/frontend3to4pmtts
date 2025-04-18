@@ -1,31 +1,35 @@
 import React,{useState,useEffect} from 'react'
 import NavbarApp from './NavbarApp'
 import axios from 'axios';
-import { Link } from 'react-router-dom';
-export default function Content() {
-     // destructured of data
-      const[data,setData]=useState(0);
-       useEffect(()=>{
-        try 
-        {
-       const response=async()=>{   
+import { Link,useNavigate } from 'react-router-dom';
 
-       await axios.get(`http://localhost:8000/add-task`).then((response)=>{
-          setData(response.data);
-          console.log(response)
-       });
-      }
-      response();
-      }
-       catch(error)
-       {
-        console.log(error);
-       }
-      },[data]);
+export default function Content() {
+const navigate = useNavigate();
+// destructured of data
+const[data,setData]=useState(0);
+useEffect(()=>{
+try 
+{
+const response=async()=>{   
+
+await axios.get(`http://localhost:8000/add-task`).then((response)=>{
+setData(response.data);
+console.log(response)
+});
+}
+response();
+}
+catch(error)
+{
+console.log(error);
+}
+},[data]);
+
   return (
     <>
       <section id='content' className='container w-75 mx-auto p-5'>
       <NavbarApp />
+  
       <h1 className='w-75 mx-auto'>Today's Task</h1>
 
       {data && data.map((item)=>{

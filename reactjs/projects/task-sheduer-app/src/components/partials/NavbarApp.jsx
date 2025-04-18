@@ -1,8 +1,21 @@
 import React,{useState,useEffect} from 'react'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import axios from 'axios';
+import { useUserAuth } from '../../Context/UserAuthContext';
 export default function NavbarApp() {
+  const { logOut } = useUserAuth();
+  const navigate = useNavigate();
+  const handleLogout = async () => {
+  try {
+  await logOut();
+  navigate("/");
+  } catch (error) {
+  console.log(error.message);
+  }
+  };
+
   const[data,setData]=useState(0);
+  
        useEffect(()=>{
         try 
         {
@@ -29,7 +42,7 @@ export default function NavbarApp() {
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{data.length}</span></button></Link></li>
         
             <li><button type='button' className='btn btn-md btn-outline-dark text-dark'>In Progress</button></li>
-            <li><button type='button' className='btn btn-md btn-outline-dark text-dark'>Completed</button></li>
+            <li><button type='button' className='btn btn-md btn-outline-danger text-dark' onClick={ handleLogout}>Logout <span className='bi bi-power'></span></button></li>
         </ul>
     </nav>
   )
