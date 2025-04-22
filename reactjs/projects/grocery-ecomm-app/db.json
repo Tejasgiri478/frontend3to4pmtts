@@ -1,0 +1,112 @@
+{
+  "category": [
+    {
+      "catname": "Dry fruits",
+      "catdesc": "dry fruits badam is good",
+      "id": "4fa1"
+    },
+    {
+      "id": "07f1",
+      "catname": "Vegetables",
+      "catdesc": "good"
+    },
+    {
+      "id": "2549",
+      "catname": "Fruits",
+      "catdesc": "good"
+    },
+    {
+      "id": "9fce",
+      "catname": "Juice",
+      "catdesc": "good"
+    }
+  ],
+  "add-items": [
+    {
+      "id": "6213",
+      "catname": "Dry fruits",
+      "itemsname": "Badam",
+      "photo": "https://t4.ftcdn.net/jpg/09/74/61/05/360_F_974610582_hFgiYxR7qQlypRjnJiyhf9LOHYXxYaK4.webp",
+      "price": "1050",
+      "desc": "good for health"
+    },
+    {
+      "id": "5bf5",
+      "catname": "Dry fruits",
+      "itemsname": "Kaju",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWDHHDcTLGqWQXeofTfOVUsOEZ_2LWwvqHXA&s",
+      "price": "1050",
+      "desc": "This image has format transparent PNG with resolution 2048x1638.\nYou can download this image in best resolution from this page and use it for design and web design.\n\nCashew nut PNG with transparent background you can download for free, just click on download button. "
+    },
+    {
+      "id": "733b",
+      "catname": "Dry fruits",
+      "itemsname": "kismis",
+      "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7MAJ3VIj2DpsfXJh9A6ZnnKjRiWbr416pSg&s",
+      "price": "450",
+      "desc": "good"
+    }
+  ],
+  "carts": [],
+  "orders": [],
+  "customers": [],
+  "reviews": [],
+  "contact-us": [
+    {
+      "id": "368c",
+      "name": "brijesh",
+      "email": "bkpandey.pandey@gmail.com",
+      "phone": "9998003879",
+      "subject": "hi",
+      "message": "gi"
+    },
+    {
+      "id": "41a2",
+      "name": "tej",
+      "email": "tej@gmail.com",
+      "phone": "954222120",
+      "subject": "hi",
+      "message": "hi"
+    },
+    {
+      "id": "fcf5",
+      "name": "meet",
+      "email": "meet@gmail.com",
+      "phone": "9121212121",
+      "subject": "hi",
+      "message": "hi"
+    },
+    {
+      "id": "c5dc",
+      "name": "komal",
+      "email": "komal@gmail.com",
+      "phone": "65121212125",
+      "subject": "hi",
+      "message": "hi"
+    },
+    {
+      "id": "c79b",
+      "name": "avani",
+      "email": "avani@gmail.com",
+      "phone": "9212121",
+      "subject": "hi",
+      "message": "hi"
+    },
+    {
+      "id": "118f",
+      "name": "drasjti",
+      "email": "drashti@gmail.com",
+      "phone": "95212121",
+      "subject": "hi",
+      "message": "hi"
+    },
+    {
+      "id": "a215",
+      "name": "ajaysingh",
+      "email": "aja@gmail.com",
+      "phone": "912121212121",
+      "subject": "hi",
+      "message": "h"
+    }
+  ]
+}
