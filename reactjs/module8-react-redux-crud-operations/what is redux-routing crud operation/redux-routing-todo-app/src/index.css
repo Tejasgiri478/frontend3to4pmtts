@@ -1,0 +1,15 @@
+body 
+{
+background-color: aliceblue;  
+}
+.nav ul li 
+{
+display: inline-block;
+padding: 0px 10px;
+}
+.nav a 
+{
+text-decoration: none;
+list-style-type: none;
+color: white;  
+}
